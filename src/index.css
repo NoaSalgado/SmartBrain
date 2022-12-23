@@ -19,3 +19,10 @@ body {
   color: #d9ecff;
   font-family: 'Ubuntu', sans-serif;
 }
+
+legend,
+label,
+button,
+a {
+  color: #d9ecff;
+}
