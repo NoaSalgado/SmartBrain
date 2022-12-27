@@ -70,7 +70,7 @@ class App extends Component {
     event.preventDefault();
     this.setState({ imageUrl: this.state.input });
 
-    fetch('http://localhost:3000/imageurl', {
+    fetch('http://smartbrain-api-production-cdc4.up.railway.app/imageurl', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -79,7 +79,7 @@ class App extends Component {
     })
       .then((response) => response.text())
       .then((result) => {
-        fetch('http://localhost:3000/image', {
+        fetch('http://smartbrain-api-production-cdc4.up.railway.app/image', {
           method: 'put',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
